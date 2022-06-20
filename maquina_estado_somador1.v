@@ -55,11 +55,12 @@ module maquina_estado_somador1(inicio, valor, clk, reset, pronto, overflow, soma
 					   acumulador <= acumulador + valor;
 					 end
 				S2: begin
-						pronto <= 1'b0;
 					   acumulador <= acumulador + valor;
 					 end
 				S3: begin
-						pronto <= 1'b0;
+					   acumulador <= acumulador + valor;
+					 end
+				S4: begin
 					   acumulador <= acumulador + valor;
 					 end
 				S5: begin
